@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>car</title>
+    <link rel="stylesheet">
+    <style>
+        #container {
+            min-width: 1200px;
+            height: 100%;
+            overflow: hidden;
+            position:absolute;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body onload="draw()">
+<div id="container">
+    <button type="button" onclick="loadSTLModel()">loadstlmodel</button>
+    <button type="button" onclick="loadOBJModel()">loadobjmodel</button>
+
+</div>
+</body>
+<script src="libs/three.js"></script>
+<script src="libs/OrbitControls.js"></script>
+<script src="libs/OBJLoader.js"></script>
+<script src="libs/STLLoader.js"></script>
+<script src="libs/MTLLoader.js"></script>
+<script src="WebViewModel.js"></script>
+<!--<script src="js/WebViewModel.js"></script>-->
+<script src="libs/FBXLoader.js"></script>
+</html>
